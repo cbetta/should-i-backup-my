@@ -16,7 +16,7 @@ all:
   propel:
     class:        sfPropelDatabase
     param:
-      password:   BR9EanyEHBy8wKb9
+      password:   
       encoding:   utf8
       persistent: true
       pooling:    true
