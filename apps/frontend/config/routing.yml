@@ -1,0 +1,36 @@
+#shows the admin page
+admin:
+  url:  /admin
+  param:  { module: admin, action: index }
+  
+# saves a new key pair
+save:
+  url:  /admin/save
+  param:  { module: admin, action: save }
+  
+  # deletes a key pair
+delete:
+  url:  /admin/delete/:id
+  param:  { module: admin, action: delete }
+
+#search target that redirect to the right path
+search_target:
+  url:  /search
+  param:  { module: search, action: target }
+  
+#the list of answer pages
+answer:
+  url:  :target
+  param: {module: answer, action: show}
+
+# default rules
+homepage:
+  url:   /
+  param: { module: search, action: index }
+
+default_index:
+  url:   /:action
+  param: { module: answer }
+
+default:
+  url:   /:module/:action/*

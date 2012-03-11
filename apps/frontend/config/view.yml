@@ -1,0 +1,17 @@
+default:
+  http_metas:
+    content-type: text/html
+
+  metas:
+    title:        Should I Backup My...
+    description:  Tells you what you probably already knew
+    keywords:     symfony, project, backup, hackday, openhack, flickr, yahoo, backups, 
+    language:     en
+    robots:       index, follow
+
+  stylesheets:    [main.css]
+
+  javascripts:    [jquery-1.3.2.min.js, search.js]
+
+  has_layout:     on
+  layout:         layout

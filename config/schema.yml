@@ -1,0 +1,6 @@
+propel:
+  setting:
+    id:
+    domain:         { type: varchar(255) }
+    key:            { type: varchar(255) }
+    value:          { type: longvarchar }

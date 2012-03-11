@@ -1,0 +1,22 @@
+dev:
+  propel:
+    param:
+      classname:  DebugPDO
+      username:   shouldibackupmy
+      dsn:        mysql:dbname=shouldibackupmy;host=localhost
+
+prod:
+  propel:
+    param:
+      classname:  PropelPDO
+      dsn:        mysql:dbname=sibum_prod;host=localhost
+      username:   sibum_prod
+
+all:
+  propel:
+    class:        sfPropelDatabase
+    param:
+      password:   BR9EanyEHBy8wKb9
+      encoding:   utf8
+      persistent: true
+      pooling:    true

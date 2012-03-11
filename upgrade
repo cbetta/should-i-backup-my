@@ -1,0 +1,7 @@
+mv web/sf ~/sf
+./symfony project:disable frontend prod
+./symfony project:freeze  /Users/cbetta/Sites/symfony/data/
+./symfony project:deploy --go production
+./symfony project:unfreeze 
+./symfony project:enable frontend prod
+mv ~/sf web/sf
